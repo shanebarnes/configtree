@@ -1,5 +1,7 @@
 :syntax on              " Enable syntax highlighting
 
+:set ruler              " Show cursor position in status bar
+
 :colorscheme pablo      " Set color scheme
 
 :set colorcolumn=80     " Highlight right margin
