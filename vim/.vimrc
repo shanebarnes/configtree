@@ -1,12 +1,14 @@
-:syntax on              " Enable syntax highlighting
+:syntax on  " Enable syntax highlighting
+:set ruler  " Show cursor position in status bar
 
-:set ruler              " Show cursor position in status bar
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+:autocmd ColorScheme * highlight Tab ctermbg=green guibg=green
 
-:colorscheme pablo      " Set color scheme
+:colorscheme pablo " Set color scheme
 
-:set colorcolumn=80     " Highlight right margin
-
-:match ErrorMsg '\s\+$' " Highlight trailing whitespaces
+:set colorcolumn=80            " Highlight right margin
+:match ExtraWhitespace /\s\+$/ " Highlight trailing whitespaces
+:match Tab /\t/                " Highlight tabs
 
 " Jump to the last position when reopening a file
 if has("autocmd")
